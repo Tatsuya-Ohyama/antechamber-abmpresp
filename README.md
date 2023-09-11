@@ -29,6 +29,10 @@ $ antechamber-abmpresp.py -il ABINIT-MP.log ANTECHAMBER_OPTIONS ...
 
 
 ## ChangeLog
+### Ver. 1.1 (2023-09-11)
+* Fix to output standard error in `antechamber`.
+* Remove unnecessary argument of `write_mol()`.
+
 ### Ver. 1.0.1 (2023-09-11)
 * Change license.
 
