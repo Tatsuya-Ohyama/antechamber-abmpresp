@@ -10,18 +10,18 @@
 $ antechamber-abmpresp.py -il ABINIT-MP.log ANTECHAMBER_OPTIONS ...
 ```
 
-* `il ABINIT-MP.log`
+* `-il ABINIT-MP.log`
 	: log file for ABINIT-MP with resp option
 
 
 ## 動作要件
+* antechamber ([AmberTools](https://ambermd.org/AmberTools.php))
 * Python3
 	* parmed
 
 ## License
-The MIT License (MIT)
-
-Copyright (c) 2023 Tatsuya Ohyama
+* GPL
+* Copyright (c) 2023 Tatsuya Ohyama
 
 
 ## Authors
@@ -29,5 +29,8 @@ Copyright (c) 2023 Tatsuya Ohyama
 
 
 ## ChangeLog
+### Ver. 1.0.1 (2023-09-11)
+* Change license.
+
 ### Ver. 1.0 (2023-09-06)
-* Released.
+* Release.
