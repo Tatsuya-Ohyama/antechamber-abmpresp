@@ -108,11 +108,11 @@ def exec_antechamber(dict_arg):
 			continue
 		list_arg.append(v)
 
-	obj_proc = subprocess.Popen(list_arg, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+	obj_proc = subprocess.Popen(list_arg, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 	print(obj_proc.communicate()[0])
 
 
-def write_mol2(mol2_file, list_charge, flag_overwrite):
+def write_mol2(mol2_file, list_charge):
 	"""
 	Function to modify charge in .mol2
 
@@ -151,4 +151,4 @@ if __name__ == '__main__':
 
 	exec_antechamber(dict_arg)
 
-	write_mol2(dict_arg["-o"], list_charge, flag_overwrite)
+	write_mol2(dict_arg["-o"], list_charge)
